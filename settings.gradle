@@ -1,1 +1,1 @@
-include ':app', ':mvp_login_advance', ':mvp_loder_demo'
+include ':app', ':mvp_login_advance', ':mvp_loder_demo', ':mvp_loader'

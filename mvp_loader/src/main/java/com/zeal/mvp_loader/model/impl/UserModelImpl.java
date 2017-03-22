@@ -1,9 +1,9 @@
-package com.zeal.mvp_login_advance.model.impl;
+package com.zeal.mvp_loader.model.impl;
 
 import android.os.Handler;
 
-import com.zeal.mvp_login_advance.Callback;
-import com.zeal.mvp_login_advance.model.IUserModel;
+import com.zeal.mvp_loader.Callback;
+import com.zeal.mvp_loader.model.IUserModel;
 
 
 /**
@@ -28,6 +28,6 @@ public class UserModelImpl implements IUserModel {
                     callback.onFail("用户名或者密码错误");
                 }
             }
-        }, 4000);
+        }, 10000);
     }
 }

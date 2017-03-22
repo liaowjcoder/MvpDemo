@@ -28,6 +28,13 @@ public class BaseActivity extends AppCompatActivity implements MvpView {
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if(mLodingProgressDialog!=null)
+            mLodingProgressDialog.dismiss();
+    }
+
+    @Override
     public void showLoading(String msg) {
         mLodingProgressDialog.setMessage(msg);
         if (! mLodingProgressDialog.isShowing()) {
